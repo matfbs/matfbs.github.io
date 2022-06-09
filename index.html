@@ -5,43 +5,203 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matheus França - Portfólio</title>
+
+    <style>
+
+    @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: rgb(63, 62, 83);
+            color:rgb(214, 214, 214);
+        }
+
+        .name {
+            font-family: 'JetBrains Mono', monospace;
+            text-align: center;
+            color:rgb(230, 230, 230);
+            text-shadow: 2.5px 5px 10px rgba(31, 31, 31, 0.562);
+        }
+
+        .title {
+            text-align: center;
+            font-weight: 300;
+            text-shadow: 2.5px 5px 10px rgba(31, 31, 31, 0.562);
+        }
+
+        strong {
+            font-weight: bolder;
+            color:rgb(83, 83, 83);
+        }
+        
+        .html {
+            font-size: 22px;
+        }
+        .css {
+            font-size: 18px;
+        }
+        .javascript {
+            font-size: 20px;
+        }
+        .unix-bash {
+            font-size: 16px;
+        }
+        .git {
+            font-size: 14px;
+        }
+        .python {
+            font-size: 24px;
+        }
+        .google-search {
+            font-size: 26px;
+        }
+        
+        .profile-picture {
+            margin-top: 30px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 50%;
+            box-shadow: 2.5px 5px 10px rgba(31, 31, 31, 0.562);
+        }
+
+        .menu{
+            max-width: 300px;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+
+        .menu-item {
+            text-decoration: none;
+            color: rgb(186, 169, 209);
+            text-shadow: 2.5px 5px 10px rgba(31, 31, 31, 0.562);
+        }
+
+        .menu-item:hover {
+            text-decoration: none;
+            color: rgb(224, 201, 253);
+        }
+
+        .content {
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 40px;
+            margin-top: 10px;
+            max-width: 900px;
+        }
+
+        .row {
+            display: flex;
+        }
+
+        .card {
+            background-color: #f3f3f3;
+            border-radius: 8px;
+            margin: 10px;
+            box-shadow: 2.5px 5px 10px rgba(31, 31, 31, 0.562);
+            width: 33%;
+        }
+
+        .card-lg {
+            width: 70%;
+        }
+
+        .card-md {
+            width: 33%;
+        }
+
+        .card-sm {
+            width: 20%;
+        }
+
+        .card-full {
+            width: 100%;
+        }
+
+        .card-title {
+            color:rgb(69, 52, 94);
+            padding: 10px, 10px;
+            text-align: center;
+            text-shadow: 2.5px 2.5px 10px rgba(31, 31, 31, 0.171);
+        }
+
+        .card-content {
+            color:rgb(54, 54, 54);
+            text-align: justify;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-bottom: 20px;
+        }
+
+        .link {
+            text-decoration: none;
+            color: rgb(62, 42, 87);
+        }
+
+        .link:hover {
+            color: rgb(106, 89, 128);
+        }
+
+        ul {
+            list-style: none;
+        }
+
+    </style>
+
 </head>
 <body>
-    <img src="assets/foto.jpg" alt="Matheus França" width="150px" id="foto">
-    <h1>Matheus França Barbosa Silva</h1>
-    <h4>Estudante de Desenvolvimento Web</h4>
+    <img class="profile-picture" src="assets/foto.jpg" alt="Matheus França" width="150px" id="foto">
+    <h1 class="name">Matheus França Barbosa Silva</h1>
+    <h4 class="title">Estudante de Desenvolvimento Web</h4>
     
-    <p>
-        <a href="#sobre">Sobre mim</a>
-        <a href="#habilidades">Habilidades</a>
-        <a href="#links">Links</a>
-    </p>
+    <div class="menu">
+        <a class="menu-item" href="#sobre">Sobre mim</a>
+        <a class="menu-item" href="#habilidades">Habilidades</a>
+        <a class="menu-item" href="#links">Links</a>
+    </div>
 
     <br>
-    <h2 id="sobre">Quem sou eu?</h2>
-    <p>Brasileiro, 26 anos, natural de Governador Valadares, MG, sou apaixonado por tecnologia, música, astronomia e ciência.
-    <br> Sou formado em Análise e Desenvolvimento de Sistemas, mas ainda não tive oportunidade de exercer essa profissão.
-    </p>
-    <br>
 
-    <h2 id="habilidades">Minhas Habilidades</h2>
-    <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>Javascript</li>
-        <li>Unix e Bash</li>
-        <li>Git</li>
-        <li>Python</li>
-        <li><em>Pesquisa no Google (avançado)</em></li>
-    </ul>
-    <br>
-
-    <h2 id="links">Links</h2>
-    <ul>
-        <li><a href="https://www.linkedin.com/in/matfbs/" target="_blank">LinkedIn</a></li>
-        <li><a href="https://github.com/matfbs" target="_blank">GitHub</a></li>
-        <li><a href="https://diolinux.com.br/" target="_blank">Um blog que eu gosto</a></li>
-        <li><a href="#foto">Minha foto</a></li>
-    </ul>
+    <div class="content">
+        <div class="row">
+            <div class="card card-full">
+                <h2 class="card-title" id="sobre">Quem sou eu?</h2>
+                <div class="card-content">
+                    <p class="description"><strong>Brasileiro</strong>, <strong>26 anos</strong>, natural de <strong>Governador Valadares, MG</strong>, sou apaixonado por tecnologia, música, astronomia e ciência.
+                    <br><br>Sou formado em Análise e Desenvolvimento de Sistemas, mas ainda não tive oportunidade de exercer essa profissão.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card card-lg">
+                <h2 class="card-title" id="habilidades">Minhas Habilidades</h2>
+                <div class="card-content">
+                <ul>
+                    <li class="html">HTML</li>
+                    <li class="css">CSS</li>
+                    <li class="javascript">Javascript</li>
+                    <li class="unix-bash">Unix e Bash</li>
+                    <li class="git">Git</li>
+                    <li class="python">Python</li>
+                    <li class="google-search"><em>Pesquisa no Google (avançado)</em></li>
+                </ul>
+            </div>
+            </div>
+        
+            <div class="card card-md">
+            <h2 class="card-title" id="links">Links</h2>
+                <ul>
+                    <li><a class="link" href="https://www.linkedin.com/in/matfbs/" target="_blank">LinkedIn</a></li>
+                    <li><a class="link" href="https://github.com/matfbs" target="_blank">GitHub</a></li>
+                    <li><a class="link" href="https://diolinux.com.br/" target="_blank">Um blog que eu gosto</a></li>
+                    <li><a class="link" href="#foto">Minha foto</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
